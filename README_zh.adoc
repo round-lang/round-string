@@ -1,0 +1,16 @@
+== 简介
+
+其他语言: https://github.com/round-lang/round-string/blob/master/README_.adoc[English]
+
+> https://github.com/round-lang/round-string/blob/master/src/test/java/org/dreamcat/round/string/bench/SimpleSpeedTest.java[测试用例]
+
+> https://github.com/round-lang/round-string/blob/master/src/test/resources/bench/round-string.xml[模板语言用例]
+
+== 特性
+
+- 函数和宏
+- 模块系统
+
+== 规划
+
+- 流编辑器
