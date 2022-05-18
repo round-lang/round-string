@@ -15,7 +15,7 @@ import org.dreamcat.round.string.loader.TemplateLoader;
 @Data
 public class RoundConfig {
 
-    private boolean ignoreMissing; // avoid TemplateNotFoundException partially
+    private boolean ignoreMissing; // avoid TemplateNotFoundException
     private String defaultEncoding = StandardCharsets.UTF_8.toString();
     private TemplateLoader templateLoader;
 

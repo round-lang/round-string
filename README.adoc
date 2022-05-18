@@ -2,6 +2,8 @@
 
 Other languages: https://github.com/round-lang/round-string/blob/master/README_zh.adoc[中文]
 
+`round-string` is a high performance in-memory templating engine, not just for xml
+
 > See https://github.com/round-lang/round-string/blob/master/src/test/java/org/dreamcat/round/string/bench/SimpleSpeedTest.java[tests] to know how to use it
 
 > A https://github.com/round-lang/round-string/blob/master/src/test/resources/bench/round-string.xml[demo] for the template language

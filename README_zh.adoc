@@ -2,6 +2,8 @@
 
 其他语言: https://github.com/round-lang/round-string/blob/master/README_.adoc[English]
 
+`round-string` 是一款高性能内存型的模板引擎，并不仅仅是专为xml而设计
+
 > https://github.com/round-lang/round-string/blob/master/src/test/java/org/dreamcat/round/string/bench/SimpleSpeedTest.java[测试用例]
 
 > https://github.com/round-lang/round-string/blob/master/src/test/resources/bench/round-string.xml[模板语言用例]

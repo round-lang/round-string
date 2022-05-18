@@ -36,6 +36,11 @@ class SimpleSpeedTest {
     @Test
     void testOne() throws Exception {
         System.out.println(toStringRs(mapContext));
+    }
+
+    @Test
+    void testAll() throws Exception {
+        System.out.println(toStringRs(mapContext));
         System.out.println(toStringFtl(mapContext));
         System.out.println(toStringVm(mapContext));
     }
@@ -77,7 +82,7 @@ class SimpleSpeedTest {
         }
 
         try {
-            Plotly.plotStack(x, y, n -> n / 1000_000., stack);
+            Plotly.plotAndOpenStack(x, y, n -> n / 1000_000., stack);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

@@ -1,4 +1,4 @@
-### keyword
+### command
 
 - for
 - in
@@ -6,7 +6,7 @@
 - break
 - continue
 - if
-- elseif
+- elif
 - else
 - end
 - and
@@ -18,29 +18,27 @@
 - assign
 - nested
 
-### builtin command
-
-- @start: start a session
-- @end: end a session
-- @delete: perform a action
+- start: start a session
+- end: end a session
+- delete: perform a action
 
 ### loop statement
 
 ```
-${for (item1, index1) in list1}
+#{for item1, index1 in list1}
     list1 has a item ${list1[index1]} on index ${index1}
 
     # delete the previous two lines
-    ${@delete previous_line 2}
-    ${for item2 in list2}
+    ${delete previous line 2}
+    #{for item2 in list2}
         loop-style like `for(i=0;i<n;i++)` is unsupported
-    ${end}
+    #{end}
     
-    ${for (item3, index3) in list3 @trim @trim ', '}
+    #{for (item3, index3) in list3 @trim @trim ', '}
         $item3, 
-    ${end}
+    #{end}
     
-    ${for (item4, index4, sep as ',') in list4 @trim}
+    ${for (item4, index4) in list4 @trim @set sep ','}
         $item4$sep 
     ${end}
 ${end}
@@ -51,7 +49,7 @@ ${end}
 ```
 ${if model.type == 'modify' @start trim}
     mutable
-${elseif model.type == 'query'}
+${elif model.type == 'query'}
     immutable
 ${else}
     node
@@ -59,7 +57,7 @@ ${end @end}
 
 ${if model.type == 'modify' then 
     'mutable' 
-  elseif model.type == 'query' then
+  elif model.type == 'query' then
     'immutable'
   else 'node'}
 
